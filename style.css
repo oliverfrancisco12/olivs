@@ -1,0 +1,71 @@
+@import url('https://fonts.cdnfonts.com/css/horizon');
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    background-image: url(guts.jpg);
+    -webkit-background-size:cover ;
+    background-size: cover;
+    background-position: center;
+    height: 130vh;
+    width: 100%;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: #1a1a1a;
+
+}
+.logo{
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-left: 12%;
+    padding-right: 12%;
+    position: relative;
+    z-index: 5;
+}  
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 25px;
+    z-index: 7;
+    color: azure;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(238, 234, 230);
+    font-weight: 500;
+    font-size: 19px;
+    text-shadow: #900C3F;
+    font-family: 'Horizon', sans-serif;
+    
+}
+nav ul li a hover {
+    color:#fff;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+  
+  a:hover {
+    color: #853527 ;
+    text-shadow:9px 5px 30px rgb(120, 2, 2);
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+
+  }
+  
+  
+

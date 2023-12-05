@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest</title>
+    <link rel="stylesheet" href="interest.css">
+    <style>
+    .logo {
+        width: 80px;
+        height: 120px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    </style> 
+   
+</head>
+ <header>
+        <a href="index.html"><img src="logo.png" class="logo">
+        </a>
+      </header>
+<body>
+   
+   
+   
+    <div class="img-slider">
+        <div class="slide active">
+        <img src="akash.jpg" alt="">
+        <div class="info">
+        <h2>Playing Basketball</h2>
+        <p>Ever Since My greatest interest is in team sports.  my passion is basketball. I haven’t played in a while as I have been busy  in college. However, I used to play on a regular basis with friends and classmates. I played in every game possible, which was every Wednesday and Friday during weekdays, and turned up to every game without missing a single one.</p>
+       </div>
+     </div>
+     <div class="slide">
+        <img src="pxfuel.jpg" alt="">
+        <div class="info">
+        <h2>Playing Instrument</h2>
+        <p>This is one of my favorite pastimes is practicing and playing the Ukulele. I am not very good right now, so most of the time, I am practicing, but I can already play a few basic pieces, and it is very satisfying to play beautiful music. although it takes a lot of patience but at the same time i enjoy it.</p>
+       </div>
+     </div>
+     <div class="slide">
+        <img src="arcade.png" alt="">
+        <div class="info">
+        <h2>Playing Video Games</h2>
+        <p>My reason why i love video games so much and im so interested to it  is because they are an escape from my sometimes boring and monotonous life. Sometimes it’s nice to put on the shoes of a made-up character and forget about all my troubles. I know that after I’ve had a hard day, I come home and put on a headset and play a good game; Action-adventure games are my favorites because I get sucked into the game’s world and forget about everything around me.</p>
+       </div>
+     </div>
+     <div class="slide">
+        <img src="trav.jpg" alt="">
+        <div class="info">
+        <h2>Travelling</h2>
+        <p>My favorite thing to do also is to travel, and i enjoy it every single time . I try to go on  overseas trip twice which is hongkong and singapore that day is one my core memory. on that day i realize that traveling is so much more than just the country. it takes planning, commitment, an openness to new cultures , new people and a spirit of adventure.</p>
+       </div>
+     </div>
+     <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+     </div>
+     </div>
+    
+     <script type="text/javascript">
+      var slides = document.querySelectorAll('.slide');
+      var btns = document.querySelectorAll('.btn');
+      let currentSlide = 1;
+
+      //
+      var manualNav = function(manual){
+        slides.forEach((slide) => {
+          slide.classList.remove('active')
+
+          btns.forEach((btn) => {
+            btn.classList.remove('active')
+          });
+        });
+
+        slides[manual].classList.add('active');
+        btns[manual].classList.add('active');
+      }
+
+      btns.forEach((btn, i) =>{
+        btn.addEventListener("click",() => {
+            manualNav(i);
+            currentSlide = i;
+        });
+      });
+     
+
+     </script>
+
+
+
+    
+    
+</body>
+</html>
